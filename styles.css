@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: var(--font-family);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --dark-text: hsl(229, 25%, 31%);
+    --score-text: hsl(229, 64%, 46%); 
+    --header-outline: hsl(217, 16%, 45%); 
+    --font-family: 'Barlow Semi Condensed', sans-serif; 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+
+.chooseMove {
+    height: 277px;
+    width: 305px;
+    background-image: url("images/bg-triangle.svg");
+    background-repeat: no-repeat;
+}
+
+.chooseMove div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.chooseMove div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 160px;
+}
+
+.counter {
+    background: transparent; 
+    height: 100px; 
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid var(--header-outline);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 120px;
+    margin-top: 50px;
+}
+
+.landingPage {
+    background: radial-gradient(#1f3756, #141539);
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.score {
+    height: 100px;
+    background: white;
+    width: 130px;
+    display: flex;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6px 3px;
+}
+
+.score h4 {
+    color: hsl(229, 64%, 46%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.score h1 {
+    color: hsl(229, 25%, 31%); 
+    font-size: 6rem;
+}
+
